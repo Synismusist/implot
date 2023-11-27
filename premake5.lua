@@ -11,12 +11,23 @@ project "ImPlot"
 		"implot.h",
 		"implot.cpp",
 		"implot_items.cpp",
-		"imgui_internal.h",
+		"implot_internal.h",
 	}
 
+	includedirs
+	{ 
+	   "../../Walnut/vendor/imgui",
+	   "../../Walnut/vendor/glfw/include",
+	   "../../Walnut/vendor/stb_image",
+ 
+	   "%{IncludeDir.VulkanSDK}",
+	   "%{IncludeDir.glm}",
+	   "%{IncludeDir.spdlog}",
+	}
+ 
 	links
 	{
-		ImGui
+		"ImGui",
 	}
 
 	filter "system:windows"
