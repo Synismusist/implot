@@ -16,9 +16,9 @@ project "ImPlot"
 
 	includedirs
 	{ 
-	   "../../Walnut/vendor/imgui",
-	   "../../Walnut/vendor/glfw/include",
-	   "../../Walnut/vendor/stb_image",
+	   "../imgui",
+	   "../glfw/include",
+	   "../stb_image",
  
 	   "%{IncludeDir.VulkanSDK}",
 	   "%{IncludeDir.glm}",
